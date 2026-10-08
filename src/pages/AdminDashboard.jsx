@@ -484,7 +484,7 @@ function AdminDashboard() {
   const getShareLink = () => {
     if (!gallery) return "";
 
-    return `http://localhost:5173/gallery/${gallery.shareToken}`;
+    return `https://photo-sharing-platform-frontend.onrender.com/gallery/${gallery.shareToken}`;
   };
 
   const copyShareLink = async () => {
