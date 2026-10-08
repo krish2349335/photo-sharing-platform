@@ -25,7 +25,7 @@ function CustomerGallery() {
     try {
 
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/galleries/public/${shareToken}`
+        `https://photo-sharing-platform-backend.onrender.com/galleries/public/${shareToken}`
       );
 
       const data = await response.json();
@@ -78,7 +78,7 @@ function CustomerGallery() {
       });
 
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/galleries/public/${shareToken}/verify?${params.toString()}`,
+        `https://photo-sharing-platform-backend.onrender.com/galleries/public/${shareToken}/verify?${params.toString()}`,
         {
           method: "POST",
         }

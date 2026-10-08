@@ -1,4 +1,4 @@
-const API_URL = "http://https://photo-sharing-platform-backend.onrender.com";
+const API_URL = "https://photo-sharing-platform-backend.onrender.com";
 
 export async function loginUser(email, password) {
   const response = await fetch(`${API_URL}/auth/login`, {

@@ -20,7 +20,7 @@ function TeamDashboard() {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://https://photo-sharing-platform-backend.onrender.com/events", {
+      const response = await fetch("https://photo-sharing-platform-backend.onrender.com/events", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -41,7 +41,7 @@ function TeamDashboard() {
       for (const event of data) {
         try {
           const photoResponse = await fetch(
-            `http://https://photo-sharing-platform-backend.onrender.com/photos/my/event/${event.id}`,
+            `https://photo-sharing-platform-backend.onrender.com/photos/my/event/${event.id}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ function TeamDashboard() {
 
     try {
       const response = await fetch(
-        "http://https://photo-sharing-platform-backend.onrender.com/photos/upload",
+        "https://photo-sharing-platform-backend.onrender.com/photos/upload",
         {
           method: "POST",
           headers: {
@@ -126,7 +126,7 @@ function TeamDashboard() {
 
     try {
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/photos/my/event/${event.id}`,
+        `https://photo-sharing-platform-backend.onrender.com/photos/my/event/${event.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

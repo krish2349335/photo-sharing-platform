@@ -35,7 +35,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        "http://https://photo-sharing-platform-backend.onrender.com/events",
+        "https://photo-sharing-platform-backend.onrender.com/events",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ function AdminDashboard() {
       for (const event of data) {
         try {
           const photoResponse = await fetch(
-            `http://https://photo-sharing-platform-backend.onrender.com/photos/event/${event.id}`,
+            `https://photo-sharing-platform-backend.onrender.com/photos/event/${event.id}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -80,7 +80,7 @@ function AdminDashboard() {
 
         try {
           const galleryResponse = await fetch(
-            `http://https://photo-sharing-platform-backend.onrender.com/galleries/event/${event.id}`,
+            `https://photo-sharing-platform-backend.onrender.com/galleries/event/${event.id}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -119,7 +119,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        "http://https://photo-sharing-platform-backend.onrender.com/users",
+        "https://photo-sharing-platform-backend.onrender.com/users",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -147,7 +147,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        "http://https://photo-sharing-platform-backend.onrender.com/events",
+        "https://photo-sharing-platform-backend.onrender.com/events",
         {
           method: "POST",
           headers: {
@@ -202,7 +202,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/events/${selectedEvent.id}/team/${selectedUser}`,
+        `https://photo-sharing-platform-backend.onrender.com/events/${selectedEvent.id}/team/${selectedUser}`,
         {
           method: "POST",
           headers: {
@@ -240,7 +240,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/photos/event/${event.id}`,
+        `https://photo-sharing-platform-backend.onrender.com/photos/event/${event.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -272,7 +272,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/photos/${photoId}/select`,
+        `https://photo-sharing-platform-backend.onrender.com/photos/${photoId}/select`,
         {
           method: "PUT",
           headers: {
@@ -329,7 +329,7 @@ function AdminDashboard() {
       });
 
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/galleries?${params.toString()}`,
+        `https://photo-sharing-platform-backend.onrender.com/galleries?${params.toString()}`,
         {
           method: "POST",
           headers: {
@@ -350,7 +350,7 @@ function AdminDashboard() {
       }
 
       const photoResponse = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/photos/event/${selectedEvent.id}`,
+        `https://photo-sharing-platform-backend.onrender.com/photos/event/${selectedEvent.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -379,7 +379,7 @@ function AdminDashboard() {
       for (const photo of selectedPhotos) {
         const addPhotoResponse =
           await fetch(
-            `http://https://photo-sharing-platform-backend.onrender.com/galleries/${createdGallery.id}/photos/${photo.id}`,
+            `https://photo-sharing-platform-backend.onrender.com/galleries/${createdGallery.id}/photos/${photo.id}`,
             {
               method: "POST",
               headers: {
@@ -442,7 +442,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/galleries/${gallery.id}/publish`,
+        `https://photo-sharing-platform-backend.onrender.com/galleries/${gallery.id}/publish`,
         {
           method: "PUT",
           headers: {
@@ -517,7 +517,7 @@ function AdminDashboard() {
 
     try {
       const photoResponse = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/photos/event/${event.id}`,
+        `https://photo-sharing-platform-backend.onrender.com/photos/event/${event.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -538,7 +538,7 @@ function AdminDashboard() {
 
       const galleryPhotoResponse =
         await fetch(
-          `http://https://photo-sharing-platform-backend.onrender.com/galleries/${existingGallery.id}/photos`,
+          `https://photo-sharing-platform-backend.onrender.com/galleries/${existingGallery.id}/photos`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -590,7 +590,7 @@ function AdminDashboard() {
 
     try {
       const response = await fetch(
-        `http://https://photo-sharing-platform-backend.onrender.com/galleries/${gallery.id}/photos/${photoId}`,
+        `https://photo-sharing-platform-backend.onrender.com/galleries/${gallery.id}/photos/${photoId}`,
         {
           method: "POST",
           headers: {
