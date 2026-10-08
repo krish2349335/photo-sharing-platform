@@ -14,7 +14,7 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:9797/users/u", {
+      const response = await fetch("http://https://photo-sharing-platform-backend.onrender.com/users/u", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
